@@ -1,0 +1,369 @@
+.create-note {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.create-note h1 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.note-input,
+.note-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f7fb;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+}
+
+.note-input {
+  height: 50px;
+}
+
+.note-textarea {
+  min-height: 220px;
+  resize: vertical;
+}
+
+.note-input:focus,
+.note-textarea:focus {
+  outline: none;
+  border-color: #777;
+}
+
+.error-message {
+  margin: 0 0 15px;
+}
+
+.save-button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4f46e5;
+  color: white;
+}
+
+h2 {
+  color: #1f2937;
+}
+
+.save-button:hover {
+  background-color: #4338ca;
+}
+
+button {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.note-details {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.note-details h1 {
+  margin-top: 0;
+}
+
+.note-details h2 {
+  margin-bottom: 15px;
+}
+
+.note-details p {
+  line-height: 1.6;
+}
+
+.back-button {
+  display: block;
+  margin: 25px auto 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.note-card {
+  width: 90%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.note-card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.note-card p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 18px;
+  background-color: #4f46e5;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.home {
+  width: 90%;
+  max-width: 800px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.home p {
+  font-size: 20px;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.home button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.home button:hover {
+  background-color: #4338ca;
+}
+
+.notes-page {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.notes-page > h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.search-input {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #222;
+  background-color: white;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+.sort-select {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto 30px;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: white;
+  color: #1f2937;
+  cursor: pointer;
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+.view-button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+}
+
+.delete-button {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+}
+
+.view-button:hover {
+  background-color: #4338ca;
+}
+
+
+.delete-button:hover {
+  background-color: #dc2626;
+}
+
+.edit-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.edit-buttons button {
+  width: 150px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #64748b;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #475569;
+}
+
+.edit-buttons .save-button {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.edit-buttons .save-button:hover {
+  background-color: #4338ca;
+}
+
+.trash-card {
+  width: 90%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+}
+
+.trash-card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.trash-card p {
+  line-height: 1.5;
+  color: #4b5563;
+  margin-bottom: 15px;
+}
+
+.restore-button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+}
+
+.restore-button:hover {
+  background-color: #4338ca;
+}
+
+.permanent-delete-button {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+}
+
+.permanent-delete-button:hover {
+  background-color: #b91c1c;
+}
+
+.trash-header {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trash-header h1 {
+  margin: 0;
+}
+
+.trash-header p {
+  margin: 5px 0 0;
+}
+
+.empty-trash-button {
+  width: 45px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #dc2626;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.empty-trash-button:hover {
+  background-color: #b91c1c;
+}
+
+.trash-page {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+}
