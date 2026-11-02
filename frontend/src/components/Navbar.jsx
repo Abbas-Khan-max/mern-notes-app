@@ -10,27 +10,41 @@ function Navbar({ token, setToken, setNotes }) {
     navigate("/login");
   }
 
-  return (
-    <nav className="navbar">
-      <Link to="/">Home</Link> | {" "}
+return (
+  <nav className="navbar">
+    <Link to="/" className="nav-brand">Notes App</Link>
+
+    <div className="nav-links">
+      <Link to="/" className="nav-link">Home</Link>
 
       {token ? (
         <>
-          <Link to="/notes">Notes</Link> | {" "}
-          <Link to="/create">Create Note</Link> | {" "}
-          <Link to="/trash">Trash</Link> | {" "}
-          <button type="button" onClick={handleLogout}>
+          <Link to="/notes" className="nav-link">Notes</Link>
+          <Link to="/create" className="nav-link">Create Note</Link>
+          <Link to="/trash" className="nav-link">Trash</Link>
+
+          <button
+            type="button"
+            className="nav-button logout-button"
+            onClick={handleLogout}
+          >
             Logout
           </button>
         </>
       ) : (
         <>
-          <Link to="/login">Login</Link> | {" "}
-          <Link to="/register">Register</Link>
+          <Link to="/login" className="nav-button login-button">
+            Login
+          </Link>
+
+          <Link to="/register" className="nav-button register-button">
+            Register
+          </Link>
         </>
       )}
-    </nav>
-  );
+    </div>
+  </nav>
+);
 }
 
 export default Navbar;

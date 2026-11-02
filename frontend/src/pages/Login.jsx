@@ -85,18 +85,23 @@ function Login({ setToken }) {
           <p className="error-message">{error}</p>
         )}
 
-        <button type="submit" disabled={loading}>
+      <button
+          type="submit"
+          className="login-submit-button"
+          disabled={loading}
+        >
           {loading ? "Logging in..." : "Login"}
-        </button>
+      </button>
       </form>
       <p>
         Don't have an account?{" "}
-        <button 
-        type="button"
-        onClick={() => navigate("/register")}
+      <button
+          type="button"
+          className="login-register-button"
+          onClick={() => navigate("/register")}
         >
-        Register
-        </button>
+          Register
+      </button>
       </p>
     </div>
   );
