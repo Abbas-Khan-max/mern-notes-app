@@ -153,7 +153,7 @@ function Trash({ notes, setNotes }) {
       }
 
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/notes/trash`,
+        `${import.meta.env.VITE_API_URL}/api/notes/trash/empty`,
         {
           method: "DELETE",
           headers: {
