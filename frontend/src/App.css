@@ -461,3 +461,41 @@ button {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+.register-submit-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 11px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.register-submit-button:hover {
+  background-color: #1d4ed8;
+}
+
+.register-submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.register-login-button {
+  background-color: #f3f4f6;
+  color: #374151;
+  padding: 10px 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.register-login-button:hover {
+  background-color: #e5e7eb;
+}

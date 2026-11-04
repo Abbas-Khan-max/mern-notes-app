@@ -97,17 +97,23 @@ function Register() {
         {error && <p className="error-message">{error}</p>}
         {success && <p>{success}</p>}
 
-        <button type="submit" disabled={loading}>
+        <button
+          type="submit"
+          className="register-submit-button"
+          disabled={loading}
+        >
           {loading ? "Creating account..." : "Register"}
-        </button>
+      </button>
+
       </form>
 
-      <button
+    <button
         type="button"
-        onClick={() => navigate("/login")}
-      >
-        Go to Login
-      </button>
+      className="register-login-button"
+      onClick={() => navigate("/login")}
+    >
+      Go to Login
+    </button>
     </div>
   );
 }
