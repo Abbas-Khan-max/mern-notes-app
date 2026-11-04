@@ -148,7 +148,7 @@ async function handleDelete(note) {
     }
 
     const response = await fetch(
-      `${import.meta.env.VITE_API_URL}/api/notes`,
+      `${import.meta.env.VITE_API_URL}/api/notes/${note._id}`,
       {
         method: "DELETE",
         headers: {
@@ -161,7 +161,7 @@ async function handleDelete(note) {
       const data = await response.json();
 
       throw new Error(
-        data.messagae || "Failed to delete note"
+        data.message || "Failed to delete note"
       );
     }
 
